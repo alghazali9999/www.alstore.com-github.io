@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <!-- Image Icons -->
+  <link rel="icon" href="https://i.pinimg.com/564x/c7/7d/65/c77d65bbadf8c210e239f6f74dec0800.jpg" type="image/gif"
+    sizes="16x16">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- Google Fonts -->
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white">
+
+  <div class="w-full max-w-screen-xl mx-auto">
+
+    <!-- Section 1-->
+    <!-- Navbar -->
+    <div class="flex justify-between items-center py-4 sticky top-0 bg-white z-50">
+      <a href="home.html">
+        <div class="text-2xl font-bold text-orange-500">Al'store</div>
+      </a>
+      <div class="flex space-x-4 items-center relative">
+
+        <!-- Mega Menu -->
+        <div class="relative">
+          <button id="category-button"
+            class="text-sm items-center transition duration-500 hover:text-orange-500">Kategori</button>
+          <!-- Mega Menu -->
+          <div id="mega-menu" class="absolute left-0 mt-2 mega-menu bg-white shadow-lg z-50 w-64">
+            <ul class="grid grid-cols-2 gap-4 p-4">
+              <li class="flex items-center"><i class="fas fa-laptop text-orange-500 mr-2"></i><a href="laptop.html"
+                  class="block px-4 py-2 text-sm transition duration-500 hover:text-orange-500">Laptop</a>
+              </li>
+              <li class="flex items-center"><i class="fas fa-keyboard text-orange-500 mr-2"></i><a href="keyboard.html"
+                  class="block px-4 py-2 text-sm transition duration-500 hover:text-orange-500">Keyboard</a>
+              </li>
+              <li class="flex items-center"><i class="fas fa-mouse text-orange-500 mr-2"></i><a href="mouse.html"
+                  class="block px-4 py-2 text-sm transition duration-500 hover:text-orange-500">Mouse</a>
+              </li>
+              <li class="flex items-center"><i class="fas fa-headphones-alt text-orange-500 mr-2"></i><a
+                  href="headphone.html"
+                  class="block px-4 py-2 text-sm transition duration-500 hover:text-orange-500">headphone</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <a href="shop.html"><button class="text-sm transition duration-500 hover:text-orange-500">Produk
+            virtual</button></a>
+        <span>|</span>
+        <a href=""><button class="text-sm transition duration-500 hover:text-orange-500">Daftar</button></a>
+        <a href=""><button class="text-sm transition duration-500 hover:text-orange-500">Login</button></a>
+      </div>
+    </div>
+
+    <!-- Carousel -->
+    <div class="relative">
+      <div id="carousel" class="flex overflow-x-scroll scrollbar-hide">
+        <!-- Slide 1 -->
+        <div class="min-w-full flex-shrink-0 bg-yellow-100 rounded-lg relative">
+          <img class="w-full h-full max-h-96 object-cover"
+            src="https://i.pinimg.com/564x/73/45/d5/7345d5ca7b39a77abce21198b1b6effa.jpg" alt="Slide 1">
+          <div class="absolute inset-0 flex items-center justify-center">
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="min-w-full flex-shrink-0 bg-green-100 rounded-lg">
+          <img class="w-full h-full max-h-96 object-cover"
+            src="https://i.pinimg.com/736x/c3/7b/79/c37b7982f006dbd91122c2a021568578.jpg" alt="Slide 2">
+        </div>
+        <!-- Slide 3 -->
+        <div class="min-w-full flex-shrink-0 bg-green-100 rounded-lg">
+          <img class="w-full h-full max-h-96 object-cover"
+            src="https://i.pinimg.com/736x/0d/07/0f/0d070f9252f659dfa66203fd3ad3b32b.jpg" alt="Slide 3">
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <button id="prev"
+        class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white p-2 w-10 h-10 rounded-full shadow transition duration-500 ease-in-out hover:bg-orange-500 hover:scale-110">‹</button>
+      <button id="next"
+        class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white p-2 w-10 h-10 rounded-full shadow transition duration-500 ease-in-out hover:bg-orange-500 hover:scale-110">›</button>
+    </div>
+
+    <!-- Icon Menu -->
+    <div class="grid grid-cols-8 gap-4 text-center py-12">
+      <div>
+        <img src="https://i.pinimg.com/564x/dd/7b/7d/dd7b7d0331320111486388491823336e.jpg" class="w-15 h-14 mx-auto"
+          alt="Icon 1">
+        <p class="text-xl font-bold">Lenovo</p>
+      </div>
+      <div>
+        <img src="https://i.pinimg.com/564x/d6/c9/cf/d6c9cf631d0300426f36ed78ad86ce14.jpg" class="w-15 h-14 mx-auto"
+          alt="Icon 2">
+        <p class="text-xl font-bold">Asus</p>
+      </div>
+      <div>
+        <img src="https://i.pinimg.com/564x/74/61/a9/7461a99763fbf2f4ac315f5e395da607.jpg" class="w-15 h-14 mx-auto"
+          alt="Icon 3">
+        <p class="text-xl font-bold">Msi</p>
+      </div>
+      <div>
+        <img src="https://i.pinimg.com/564x/9c/1c/e4/9c1ce41662110298b5bc02de7afcfb94.jpg" class="w-15 h-14 mx-auto"
+          alt="Icon 4">
+        <p class="text-xl font-bold">Acer</p>
+      </div>
+      <div>
+        <img src="https://i.pinimg.com/564x/fe/0f/fc/fe0ffc4318ac4042d26eb22f0ff079cf.jpg" class="w-15 h-14 mx-auto"
+          alt="Icon 5">
+        <p class="text-xl font-bold">Hp</p>
+      </div>
+      <div>
+        <img src="https://i.pinimg.com/564x/88/2b/f4/882bf4986029033be8462447dcde4f8f.jpg" class="w-15 h-14 mx-auto"
+          alt="Icon 5">
+        <p class="text-xl font-bold">Dell</p>
+      </div>
+      <div>
+        <img src="https://i.pinimg.com/564x/dc/36/c1/dc36c1d02dfe2ec192b7ec6d2289cb2d.jpg" class="w-15 h-14 mx-auto"
+          alt="Icon 5">
+        <p class="text-xl font-bold">Samsung</p>
+      </div>
+      <div>
+        <img src="https://i.pinimg.com/564x/cf/11/eb/cf11ebcc0a874e3ad3830431f7b0ab58.jpg" class="w-15 h-14 mx-auto"
+          alt="Icon 5">
+        <p class="text-xl font-bold">Apple</p>
+      </div>
+    </div>
+    <!-- Section 1-->
+
+    <!-- Section 2 -->
+    <section class="py-6 sm:py-12 dark:bg-gray-100 dark:text-gray-800">
+      <div class="flex flex-col-2 mb-6 px-4 mx-auto w-full">
+        <p class="text-2xl font-bold text-left mr-auto">Keliling mall tanpa kaki pegal</p>
+        <p class="text-lg font-semibold text-right text-black mt-2">100% Genuine &bull; Official Store &bull; 14 Days
+          Return Guarantee</p>
+      </div>
+
+
+      <div class="relative flex space-x-4 items-center">
+        <!-- Left Banner -->
+        <div class="relative w-80 flex-none items-center">
+          <img src="https://i.pinimg.com/736x/c0/38/64/c038647d93da787dcf800d5f731750ea.jpg" alt="Bukamall"
+            class="w-full h-full object-cover rounded-lg" />
+          <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+            <div class="text-white text-center p-4">
+              <p class="mb-4">Di sini kamu bisa lihat-lihat dan beli barang asli dari berbagai brand resmi</p>
+              <button class="bg-rose-500 text-white px-4 py-2 rounded">Yuk, keliling Mall!</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Section -->
+        <div class="relative items-center">
+          <div class="carousel-wrapper overflow-hidden">
+            <div class="carousel-inner flex transition-transform duration-500 ease-in-out">
+
+              <!-- Carousel Item 1 -->
+              <div class="carousel-item px-4 flex-shrink-0 w-full md:w-1/2 lg:w-1/4">
+                <article class="flex flex-col dark:bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+                  <img src="https://i.pinimg.com/564x/25/61/71/256171668a9b3467db5e79a37002407d.jpg" alt="Laptop 1"
+                    class="object-cover w-full h-52 dark:bg-gray-500">
+                  <div class="flex flex-col flex-1 p-6">
+                    <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Laptop Gaming XYZ</h3>
+                    <p class="text-sm text-gray-600">Harga: Rp 15.000.000</p>
+                    <p class="text-sm text-gray-600">Rating: ★★★★☆</p>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Carousel Item 2 -->
+              <div class="carousel-item px-4 flex-shrink-0 w-full md:w-1/2 lg:w-1/4">
+                <article class="flex flex-col dark:bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+                  <img src="https://i.pinimg.com/564x/bb/90/d4/bb90d40eb35dad6295723e67ba4ea9ba.jpg" alt="Laptop 2"
+                    class="object-cover w-full h-52 dark:bg-gray-500">
+                  <div class="flex flex-col flex-1 p-6">
+                    <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Laptop Ultrabook ABC</h3>
+                    <p class="text-sm text-gray-600">Harga: Rp 12.000.000</p>
+                    <p class="text-sm text-gray-600">Rating: ★★★★★</p>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Carousel Item 3 -->
+              <div class="carousel-item px-4 flex-shrink-0 w-full md:w-1/2 lg:w-1/4">
+                <article class="flex flex-col dark:bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+                  <img src="https://i.pinimg.com/564x/d9/00/0e/d9000ea88551af9ca2caa365e471cf6b.jpg" alt="Laptop 3"
+                    class="object-cover w-full h-52 dark:bg-gray-500">
+                  <div class="flex flex-col flex-1 p-6">
+                    <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Laptop Bisnis <br> DEF</h3>
+                    <p class="text-sm text-gray-600">Harga: Rp 10.500.000</p>
+                    <p class="text-sm text-gray-600">Rating: ★★★★☆</p>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Carousel Item 4 -->
+              <div class="carousel-item px-4 flex-shrink-0 w-full md:w-1/2 lg:w-1/4">
+                <article class="flex flex-col dark:bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+                  <img src="https://i.pinimg.com/564x/34/d6/60/34d6601acadb87a6467b9e68d6e54e09.jpg" alt="Laptop 4"
+                    class="object-cover w-full h-52 dark:bg-gray-500">
+                  <div class="flex flex-col flex-1 p-6">
+                    <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Laptop Kreatif <br> GHI</h3>
+                    <p class="text-sm text-gray-600">Harga: Rp 14.000.000</p>
+                    <p class="text-sm text-gray-600">Rating: ★★★★☆</p>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Carousel Item 5 -->
+              <div class="carousel-item px-4 flex-shrink-0 w-full md:w-1/2 lg:w-1/4">
+                <article class="flex flex-col dark:bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+                  <img src="https://i.pinimg.com/564x/f3/96/79/f396790e14c38233080e8acafdd96c3e.jpg" alt="Laptop 5"
+                    class="object-cover w-full h-52 dark:bg-gray-500">
+                  <div class="flex flex-col flex-1 p-6">
+                    <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Laptop Pelajar <br> JKL</h3>
+                    <p class="text-sm text-gray-600">Harga: Rp 8.500.000</p>
+                    <p class="text-sm text-gray-600">Rating: ★★★☆☆</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <!-- Carousel Navigation Buttons -->
+            <button
+            class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white text-black p-2 w-10 h-10 rounded-full flex items-center justify-center transition duration-500 ease-in-out hover:bg-orange-500 hover:scale-110"
+            id="prevButton">&lt;</button>
+          <button
+            class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white text-black p-2 w-10 h-10 rounded-full flex items-center justify-center transition duration-500 ease-in-out hover:bg-orange-500 hover:scale-110"
+            id="nextButton">&gt;</button>          
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 2 -->
+
+    <!-- Section 3 -->
+    <section class="py-6 sm:py-12 dark:bg-gray-100 dark:text-gray-800">
+      <div class="flex flex-col-2 mb-6 px-4 mx-auto w-full">
+        <p class="text-2xl font-bold text-left mr-auto">Temukan produk Menarik</p>
+        <p class="text-lg font-semibold text-right text-black mt-2">Temukan produk terbaik untuk kebutuhanmu</p>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 px-4">
+        <!-- All-in-One PC Item 1 -->
+        <div class="flex flex-col dark:bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+          <img src="https://i.pinimg.com/564x/3b/50/c8/3b50c8ebb61d1b3ac7c86ed01b218094.jpg" alt="PC All-in-One A"
+            class="object-cover w-full h-40 dark:bg-gray-500">
+          <div class="flex flex-col flex-1 p-4">
+            <h3 class="flex-1 text-lg font-semibold leading-snug">All-in-One PC Model A</h3>
+            <p class="text-sm text-gray-600">Harga: Rp 12.000.000</p>
+            <p class="text-sm text-gray-600">Rating: ★★★★☆</p>
+          </div>
+        </div>
+
+        <!-- All-in-One PC Item 2 -->
+        <div class="flex flex-col dark:bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+          <img src="https://i.pinimg.com/564x/a3/6d/92/a36d9235c0abc3e770b995d26e8ae3e8.jpg" alt="PC All-in-One B"
+            class="object-cover w-full h-40 dark:bg-gray-500">
+          <div class="flex flex-col flex-1 p-4">
+            <h3 class="flex-1 text-lg font-semibold leading-snug">All-in-One PC Model B</h3>
+            <p class="text-sm text-gray-600">Harga: Rp 15.500.000</p>
+            <p class="text-sm text-gray-600">Rating: ★★★★★</p>
+          </div>
+        </div>
+
+        <!-- All-in-One PC Item 3 -->
+        <div class="flex flex-col dark:bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+          <img src="https://i.pinimg.com/564x/be/94/63/be94638e6eb09a1cc31770a9fb22eb79.jpg" alt="PC All-in-One C"
+            class="object-cover w-full h-40 dark:bg-gray-500">
+          <div class="flex flex-col flex-1 p-4">
+            <h3 class="flex-1 text-lg font-semibold leading-snug">All-in-One PC Model C</h3>
+            <p class="text-sm text-gray-600">Harga: Rp 10.000.000</p>
+            <p class="text-sm text-gray-600">Rating: ★★★☆☆</p>
+          </div>
+        </div>
+
+        <!-- All-in-One PC Item 4 -->
+        <div class="flex flex-col dark:bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+          <img src="https://i.pinimg.com/564x/a2/c8/04/a2c804550f9be35424f0f2f92858511f.jpg" alt="PC All-in-One D"
+            class="object-cover w-full h-40 dark:bg-gray-500">
+          <div class="flex flex-col flex-1 p-4">
+            <h3 class="flex-1 text-lg font-semibold leading-snug">All-in-One PC Model D</h3>
+            <p class="text-sm text-gray-600">Harga: Rp 13.500.000</p>
+            <p class="text-sm text-gray-600">Rating: ★★★★☆</p>
+          </div>
+        </div>
+
+        <!-- All-in-One PC Item 5 -->
+        <div class="flex flex-col dark:bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+          <img src="https://i.pinimg.com/564x/13/ef/75/13ef75635c004e60df6812728c4f6b37.jpg" alt="PC All-in-One E"
+            class="object-cover w-full h-40 dark:bg-gray-500">
+          <div class="flex flex-col flex-1 p-4">
+            <h3 class="flex-1 text-lg font-semibold leading-snug">All-in-One PC Model <br> E</h3>
+            <p class="text-sm text-gray-600">Harga: Rp 11.000.000</p>
+            <p class="text-sm text-gray-600">Rating: ★★★★☆</p>
+          </div>
+        </div>
+
+        <!-- Mouse Wireless ABC -->
+        <div class="flex flex-col dark:bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+          <img src="https://i.pinimg.com/564x/f1/37/fa/f137fa5b48b2316a17dfc34ed6062df0.jpg" alt="Mouse Wireless ABC"
+            class="object-cover w-full h-40 dark:bg-gray-500">
+          <div class="flex flex-col flex-1 p-4">
+            <h3 class="flex-1 text-lg font-semibold leading-snug">Mouse Wireless <br> ABC</h3>
+            <p class="text-sm text-gray-600">Harga: Rp 150.000</p>
+            <p class="text-sm text-gray-600">Rating: ★★★★☆</p>
+          </div>
+        </div>
+
+        <!-- Mouse Gaming DEF -->
+        <div class="flex flex-col dark:bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+          <img src="https://i.pinimg.com/564x/3c/82/7e/3c827eda8876c7b9713e45841b3031a2.jpg" alt="Mouse Gaming DEF"
+            class="object-cover w-full h-40 dark:bg-gray-500">
+          <div class="flex flex-col flex-1 p-4">
+            <h3 class="flex-1 text-lg font-semibold leading-snug">Mouse Gaming <br> DEF</h3>
+            <p class="text-sm text-gray-600">Harga: Rp 300.000</p>
+            <p class="text-sm text-gray-600">Rating: ★★★★☆</p>
+          </div>
+        </div>
+
+        <!-- Mouse Bluetooth GHI -->
+        <div class="flex flex-col dark:bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+          <img src="https://i.pinimg.com/564x/d0/b1/c4/d0b1c4ab6441bc0c250d6a59e75178a2.jpg" alt="Mouse Bluetooth GHI"
+            class="object-cover w-full h-40 dark:bg-gray-500">
+          <div class="flex flex-col flex-1 p-4">
+            <h3 class="flex-1 text-lg font-semibold leading-snug">Mouse Bluetooth <br> GHI</h3>
+            <p class="text-sm text-gray-600">Harga: Rp 200.000</p>
+            <p class="text-sm text-gray-600">Rating: ★★★☆☆</p>
+          </div>
+        </div>
+
+        <!-- Mouse Silent Click JKL -->
+        <div class="flex flex-col dark:bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+          <img src="https://i.pinimg.com/736x/4e/0e/fb/4e0efbf4a9f21dfdffb2fc3b893625fa.jpg"
+            alt="Mouse Silent Click JKL" class="object-cover w-full h-40 dark:bg-gray-500">
+          <div class="flex flex-col flex-1 p-4">
+            <h3 class="flex-1 text-lg font-semibold leading-snug">Mouse Silent Click JKL</h3>
+            <p class="text-sm text-gray-600">Harga: Rp 120.000</p>
+            <p class="text-sm text-gray-600">Rating: ★★★★☆</p>
+          </div>
+        </div>
+
+        <!-- Mouse Ergonomis MNO -->
+        <div class="flex flex-col dark:bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+          <img src="https://i.pinimg.com/564x/11/b3/2e/11b32e3de76fb1dee1167d7c1e8d4790.jpg" alt="Mouse Ergonomis MNO"
+            class="object-cover w-full h-40 dark:bg-gray-500">
+          <div class="flex flex-col flex-1 p-4">
+            <h3 class="flex-1 text-lg font-semibold leading-snug">Mouse Ergonomis MNO</h3>
+            <p class="text-sm text-gray-600">Harga: Rp 250.000</p>
+            <p class="text-sm text-gray-600">Rating: ★★★★★</p>
+          </div>
+        </div>
+
+        <!-- Keyboard Mechanical XYZ -->
+        <div class="flex flex-col dark:bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+          <img src="https://i.pinimg.com/564x/41/de/3a/41de3a6fd2c318615e35b7b49b08e97e.jpg"
+            alt="Keyboard Mechanical XYZ" class="object-cover w-full h-40 dark:bg-gray-500">
+          <div class="flex flex-col flex-1 p-4">
+            <h3 class="flex-1 text-lg font-semibold leading-snug">Keyboard Mechanical XYZ</h3>
+            <p class="text-sm text-gray-600">Harga: Rp 700.000</p>
+            <p class="text-sm text-gray-600">Rating: ★★★★★</p>
+          </div>
+        </div>
+
+        <!-- Keyboard Wireless ABC -->
+        <div class="flex flex-col dark:bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+          <img src="https://i.pinimg.com/564x/5b/91/03/5b9103912307116304f587f236c1de3c.jpg" alt="Keyboard Wireless ABC"
+            class="object-cover w-full h-40 dark:bg-gray-500">
+          <div class="flex flex-col flex-1 p-4">
+            <h3 class="flex-1 text-lg font-semibold leading-snug">Keyboard Wireless ABC</h3>
+            <p class="text-sm text-gray-600">Harga: Rp 400.000</p>
+            <p class="text-sm text-gray-600">Rating: ★★★★☆</p>
+          </div>
+        </div>
+
+        <!-- Keyboard Gaming DEF -->
+        <div class="flex flex-col dark:bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+          <img src="https://i.pinimg.com/736x/38/76/19/387619e23e497b9f37e2516bd4a50219.jpg" alt="Keyboard Gaming DEF"
+            class="object-cover w-full h-40 dark:bg-gray-500">
+          <div class="flex flex-col flex-1 p-4">
+            <h3 class="flex-1 text-lg font-semibold leading-snug">Keyboard Gaming DEF</h3>
+            <p class="text-sm text-gray-600">Harga: Rp 1.200.000</p>
+            <p class="text-sm text-gray-600">Rating: ★★★★★</p>
+          </div>
+        </div>
+
+        <!-- Keyboard Bluetooth GHI -->
+        <div class="flex flex-col dark:bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+          <img src="https://i.pinimg.com/736x/7f/da/1d/7fda1ddd431cbd7602b4542b267684c1.jpg"
+            alt="Keyboard Bluetooth GHI" class="object-cover w-full h-40 dark:bg-gray-500">
+          <div class="flex flex-col flex-1 p-4">
+            <h3 class="flex-1 text-lg font-semibold leading-snug">Keyboard Bluetooth GHI</h3>
+            <p class="text-sm text-gray-600">Harga: Rp 350.000</p>
+            <p class="text-sm text-gray-600">Rating: ★★★☆☆</p>
+          </div>
+        </div>
+
+        <!-- Keyboard Ergonomis JKL -->
+        <div class="flex flex-col dark:bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+          <img src="https://i.pinimg.com/736x/b3/29/99/b32999897ab8f6a3b5bbf4de357a822f.jpg"
+            alt="Keyboard Ergonomis JKL" class="object-cover w-full h-40 dark:bg-gray-500">
+          <div class="flex flex-col flex-1 p-4">
+            <h3 class="flex-1 text-lg font-semibold leading-snug">Keyboard Ergonomis JKL</h3>
+            <p class="text-sm text-gray-600">Harga: Rp 600.000</p>
+            <p class="text-sm text-gray-600">Rating: ★★★★☆</p>
+          </div>
+        </div>
+
+        <!-- Earphone Wireless ABC -->
+        <div class="flex flex-col dark:bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+          <img src="https://i.pinimg.com/564x/bf/f6/8f/bff68fbe78d793452c3ef7dcacaeb165.jpg" alt="Earphone Wireless ABC"
+            class="object-cover w-full h-40 dark:bg-gray-500">
+          <div class="flex flex-col flex-1 p-4">
+            <h3 class="flex-1 text-lg font-semibold leading-snug">Earphone Wireless ABC</h3>
+            <p class="text-sm text-gray-600">Harga: Rp 300.000</p>
+            <p class="text-sm text-gray-600">Rating: ★★★★☆</p>
+          </div>
+        </div>
+
+        <!-- Earphone Noise Cancelling DEF -->
+        <div class="flex flex-col dark:bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+          <img src="https://i.pinimg.com/736x/d9/77/44/d977444c20b199a82fb94745e4626b0f.jpg"
+            alt="Earphone Noise Cancelling DEF" class="object-cover w-full h-40 dark:bg-gray-500">
+          <div class="flex flex-col flex-1 p-4">
+            <h3 class="flex-1 text-lg font-semibold leading-snug">Earphone Noise Cancelling DEF</h3>
+            <p class="text-sm text-gray-600">Harga: Rp 500.000</p>
+            <p class="text-sm text-gray-600">Rating: ★★★★★</p>
+          </div>
+        </div>
+
+        <!-- Earphone Bluetooth GHI -->
+        <div class="flex flex-col dark:bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+          <img src="https://i.pinimg.com/564x/49/6a/05/496a056f4d78d6dd6fb227fba0d45d64.jpg"
+            alt="Earphone Bluetooth GHI" class="object-cover w-full h-40 dark:bg-gray-500">
+          <div class="flex flex-col flex-1 p-4">
+            <h3 class="flex-1 text-lg font-semibold leading-snug">Earphone Bluetooth GHI</h3>
+            <p class="text-sm text-gray-600">Harga: Rp 250.000</p>
+            <p class="text-sm text-gray-600">Rating: ★★★☆☆</p>
+          </div>
+        </div>
+
+        <!-- Earphone Gaming JKL -->
+        <div class="flex flex-col dark:bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+          <img src="https://i.pinimg.com/564x/94/48/4c/94484cbb3162931dd6fccf7c700213bd.jpg" alt="Earphone Gaming JKL"
+            class="object-cover w-full h-40 dark:bg-gray-500">
+          <div class="flex flex-col flex-1 p-4">
+            <h3 class="flex-1 text-lg font-semibold leading-snug">Earphone Gaming JKL</h3>
+            <p class="text-sm text-gray-600">Harga: Rp 450.000</p>
+            <p class="text-sm text-gray-600">Rating: ★★★★☆</p>
+          </div>
+        </div>
+
+        <!-- Earphone Bass Boosted MNO -->
+        <div class="flex flex-col dark:bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+          <img src="https://i.pinimg.com/564x/a5/bb/fd/a5bbfd10b4b8b11ed47da445496951ba.jpg"
+            alt="Earphone Bass Boosted MNO" class="object-cover w-full h-40 dark:bg-gray-500">
+          <div class="flex flex-col flex-1 p-4">
+            <h3 class="flex-1 text-lg font-semibold leading-snug">Earphone Bass Boosted MNO</h3>
+            <p class="text-sm text-gray-600">Harga: Rp 350.000</p>
+            <p class="text-sm text-gray-600">Rating: ★★★★★</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- Section 3 -->
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+ 
+ /* Hide scrollbar */
+ .scrollbar-hide {
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+
+  .mega-menu {
+    display: none; /* Menyembunyikan menu secara default */
+    opacity: 0; /* Opacity awal */
+    transition: opacity 500ms ease; /* Efek transisi */
+}
+.mega-menu.show {
+    display: block; /* Menampilkan menu */
+    opacity: 1; /* Opacity penuh saat ditampilkan */
+}
